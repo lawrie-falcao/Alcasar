@@ -1,0 +1,5 @@
+sudo apt-get install slapd ldap-utils
+
+sudo dpkg-reconfigure slapd
+
+sudo ldapsearch -Q -L -Y EXTERNAL -H ldapi:/// -b dc=lolo,dc=com
